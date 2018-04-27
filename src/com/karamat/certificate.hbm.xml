@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+  <hibernate-mapping>
+  <class name="com.karamat.jaxrs.model.Certificate" table="hb_certificate">
+    <id name="id">
+      <generator class="increment"></generator>
+    </id>
+
+   <property name="description" ></property>
+   <property name="regulation"></property>
+   <property name="supplier"></property>
+   <property name="createdBy"></property>
+   <property name="created"></property>
+   <property name="certNo"></property>
+   <property name="regArea"></property>
+   <property name="modifiedBy"></property>
+   <property name="modifiedDate"></property>
+   <property name="contactInfo"></property>
+   <property name="supplierId"></property>
+   <property name="certType"></property>
+   <property name="context"></property>
+
+
+
+   </class>
+  </hibernate-mapping>

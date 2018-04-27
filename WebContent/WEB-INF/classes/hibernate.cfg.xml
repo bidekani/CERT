@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+  <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@131.97.125.201:1523/gedbp01.got.volvo.net</property>
+        <property name="hibernate.connection.username">vbi</property>
+        <property name="hibernate.connection.password">bodybuilder123</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="show_sql">true</property>
+		<property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>
+
+		<!-- Mapping With Model Class Containing Annotations -->
+		<mapping resource="certext.hbm.xml" />
+		<mapping resource="certificate.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>
